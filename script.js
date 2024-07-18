@@ -39,12 +39,12 @@ function getWinner(player, computer) {
 function showResult(winner, playerChoice, computerChoice) {
     if (winner === 'player') {
         playerScore++;
-        message.textContent = `You win! ${playerChoice} beats ${computerChoice}`;
+        message.textContent = `Yes! Winner! ${playerChoice} beats ${computerChoice}`;
     } else if (winner === 'computer') {
         computerScore++;
         message.textContent = `You lose! ${computerChoice} beats ${playerChoice}`;
     } else {
-        message.textContent = `It's a draw! You both chose ${playerChoice}`;
+        message.textContent = `It's a draw! You both have ${playerChoice}`;
     }
     score.textContent = `Player: ${playerScore} | Computer: ${computerScore}`;
 }
