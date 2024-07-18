@@ -36,6 +36,8 @@ h1 {
     margin: 0 10px;
     cursor: pointer;
     transition: background 0.3s;
+    border-radius: 5px;
+    border: solid rgb(242, 203, 154) 2px;
 }
 
 .choice:hover {
