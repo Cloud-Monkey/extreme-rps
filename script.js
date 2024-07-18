@@ -16,7 +16,7 @@ function playGame(e) {
 }
 
 function getComputerChoice() {
-    const choices = ['Rock', 'Paper', 'Scissors'];
+    const choices = ['rock', 'paper', 'scissors'];
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
 }
@@ -26,9 +26,9 @@ function getWinner(player, computer) {
         return 'draw';
     }
     if (
-        (player === 'Rock' && computer === 'Scissors') ||
-        (player === 'Paper' && computer === 'Rock') ||
-        (player === 'Scissors' && computer === 'Paper')
+        (player === 'rock' && computer === 'scissors') ||
+        (player === 'paper' && computer === 'rock') ||
+        (player === 'scissors' && computer === 'paper')
     ) {
         return 'player';
     } else {
@@ -42,7 +42,7 @@ function showResult(winner, playerChoice, computerChoice) {
         message.textContent = `Yes! Winner! ${playerChoice} beats ${computerChoice}`;
     } else if (winner === 'computer') {
         computerScore++;
-        message.textContent = `You lose! ${computerChoice} beats ${playerChoice}`;
+        message.textContent = `Oh No! You lose! ${computerChoice} beats ${playerChoice}`;
     } else {
         message.textContent = `It's a draw! You both have ${playerChoice}`;
     }
