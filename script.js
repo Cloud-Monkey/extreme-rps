@@ -16,7 +16,7 @@ function playGame(e) {
 }
 
 function getComputerChoice() {
-    const choices = ['rock', 'paper', 'scissors'];
+    const choices = ['Rock', 'Paper', 'Scissors'];
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
 }
@@ -26,9 +26,9 @@ function getWinner(player, computer) {
         return 'draw';
     }
     if (
-        (player === 'rock' && computer === 'scissors') ||
-        (player === 'paper' && computer === 'rock') ||
-        (player === 'scissors' && computer === 'paper')
+        (player === 'Rock' && computer === 'Scissors') ||
+        (player === 'Paper' && computer === 'Rock') ||
+        (player === 'Scissors' && computer === 'Paper')
     ) {
         return 'player';
     } else {
