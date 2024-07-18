@@ -4,9 +4,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #bfafaf;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(40, 15, 20, 1) 100%);
     font-family: Arial, sans-serif;
-    color: rgb(75, 61, 128);
+    color: rgb(54, 43, 94);
 }
 
 .container {
@@ -15,7 +16,9 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid rgb(242, 203, 154) 2px;
+    border: solid rgb(228, 184, 130) 4px;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 h1 {
@@ -37,7 +40,8 @@ h1 {
     cursor: pointer;
     transition: background 0.3s;
     border-radius: 5px;
-    border: solid rgb(242, 203, 154) 2px;
+    border: solid rgb(222, 169, 104) 4px;
+    background-color: #686565;
 }
 
 .choice:hover {
